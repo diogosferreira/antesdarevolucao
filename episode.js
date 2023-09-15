@@ -4,6 +4,7 @@ $(document).ready(function () {
   // EPISODE TITLE MIXED FONT —————————————
   const page_title = $("h1").text();
   const title_words = page_title.split(" ");
+  console.log("teste");
   const number_words = title_words.length;
   const half_words = Math.round(number_words / 2);
 
@@ -25,7 +26,7 @@ $(document).ready(function () {
       first_half_with_spaces +
       "</span>" +
       second_half_with_spaces +
-      "</div>"
+      "</div>",
   );
 
   $(".episode-title-text_wrapper").empty();
@@ -75,13 +76,13 @@ $(document).ready(function () {
       url +
       "%2F&title=" +
       title +
-      "%3F"
+      "%3F",
   );
   $("[data-share-facebook").attr("target", "_blank");
 
   $("[data-share-twitter").attr(
     "href",
-    "https://twitter.com/share?url=" + url + "%2F&title=" + title + "&summary="
+    "https://twitter.com/share?url=" + url + "%2F&title=" + title + "&summary=",
   );
   $("[data-share-twitter").attr("target", "_blank");
 
